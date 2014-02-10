@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Sp View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="spViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tNT-nd-Qit"/>
+                        <viewControllerLayoutGuide type="bottom" id="br7-xV-rsu"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-Jg-UZo">
+                                <rect key="frame" x="20" y="20" width="135" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXw-jd-ci3">
+                                <rect key="frame" x="165" y="20" width="135" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iID-aV-EzI">
+                                <rect key="frame" x="20" y="150" width="280" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iID-aV-EzI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="DAZ-Gz-jWv"/>
+                            <constraint firstAttribute="trailing" secondItem="iID-aV-EzI" secondAttribute="trailing" constant="20" id="IZL-Xa-o7K"/>
+                            <constraint firstItem="br7-xV-rsu" firstAttribute="top" secondItem="iID-aV-EzI" secondAttribute="bottom" constant="20" id="ahC-vU-QV7"/>
+                            <constraint firstAttribute="trailing" secondItem="dXw-jd-ci3" secondAttribute="trailing" constant="20" id="j9L-Pg-Xqk"/>
+                            <constraint firstItem="dXw-jd-ci3" firstAttribute="leading" secondItem="BzL-Jg-UZo" secondAttribute="trailing" constant="10" id="ouf-R7-Dxg"/>
+                            <constraint firstItem="dXw-jd-ci3" firstAttribute="width" secondItem="BzL-Jg-UZo" secondAttribute="width" id="qan-Bj-iIK"/>
+                            <constraint firstItem="BzL-Jg-UZo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="tWy-BM-Ue5"/>
+                            <constraint firstItem="iID-aV-EzI" firstAttribute="top" secondItem="tNT-nd-Qit" secondAttribute="bottom" constant="130" id="tz2-oO-e26"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
